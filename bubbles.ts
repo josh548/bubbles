@@ -9,8 +9,6 @@ window.addEventListener("resize", () => {
 
 const context: CanvasRenderingContext2D =
     canvas.getContext("2d") as CanvasRenderingContext2D;
-context.textAlign = "center";
-context.textBaseline = "middle";
 
 const defaultRadius: number =
     Math.floor(Math.min(canvas.width, canvas.height) / 10);
@@ -46,6 +44,8 @@ class Bubble {
         context.closePath();
         context.fillStyle = `hsl(${this.hue}, 100%, 80%)`;
         context.fill();
+        context.textAlign = "center";
+        context.textBaseline = "middle";
         context.font = `${Math.floor(this.radius * 0.75)}px sans-serif`;
         context.fillStyle = "rgba(0, 0, 0, 0.5)";
         context.fillText(this.text, this.x, this.y);
