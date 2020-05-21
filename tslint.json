@@ -1,16 +1,9 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:all"
+        "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {
-        "max-line-length": [true, 80],
-        "member-ordering": false,
-        "newline-before-return": false,
-        "no-inferrable-types": false,
-        "no-magic-numbers": false,
-        "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"]
-    },
+    "rules": {},
     "rulesDirectory": []
 }
