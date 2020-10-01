@@ -16,7 +16,7 @@ const defaultSpeed: number =
     Math.round(Math.min(canvas.width, canvas.height) / 200);
 
 const messages: string[] = "bubbles".split("");
-let messageIndex: number = 0;
+let messageIndex = 0;
 
 class Bubble {
     public x: number;
